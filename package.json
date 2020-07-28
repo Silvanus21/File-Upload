@@ -1,0 +1,21 @@
+{
+  "name": "file-upload",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Silvanus",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.4",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "morgan": "^1.10.0"
+  }
+}
